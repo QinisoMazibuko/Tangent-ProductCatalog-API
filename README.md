@@ -41,6 +41,16 @@ The **Tangent Product Catalog API** is a Proof of Concept (POC) designed to show
 - **JWT Token Cryptography:**
   A `SubscriptionContext` is used to manage JWT token cryptography, including retrieving the current subscriber from the token for authorization purposes. This ensures that secure and authenticated access is enforced for protected endpoints.
 
+- **Configuration Management with Secure Storage (Future Plan):**
+  In the future, secure storage mechanisms such as **Azure Key Vault** or other app settings management services will be implemented to securely store sensitive configuration values such as connection strings, API keys, and JWT signing keys. This will allow sensitive data to be accessed securely without hardcoding it into the application or configuration files. Using a key vault also enables easy rotation and management of secrets, improving the overall security posture of the API.
+
+  This will involve:
+
+  - **Azure Key Vault (or AWS Secrets Manager):** To store sensitive data such as JWT signing keys and API credentials.
+  - **App Configuration Services:** To centrally manage non-sensitive configuration data, ensuring that configuration settings can be dynamically adjusted without requiring code redeployment.
+
+  These mechanisms will enhance the security, flexibility, and scalability of the API by keeping sensitive data out of source control and making it easier to manage in dynamic cloud environments.
+
 ### Technologies Used
 
 - **Docker:** For containerizing the API, ensuring it runs consistently across different environments.
