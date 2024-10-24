@@ -67,7 +67,7 @@ public class ProductControllerTests
         };
         var mockResult = new Domain.Models.OperationResult<IEnumerable<Tangent.Catalog.API.Services.Dtos.ProductDto>>
         {
-            Metadata = new PagedResponseMetadata { TotalResults = 1, ResultsPerPage = 10 },
+            Metadata = new Domain.Models.Metadata { TotalResults = 1, ResultsPerPage = 10 },
             Results = new List<ProductDto> { new ProductDto { Id = 1, Name = "Product 1" } }
         };
         _mockService.Setup(x => x.GetProducts(request.ResultsPerPage, request.Filters, request.PageId)).ReturnsAsync(mockResult);
@@ -91,7 +91,7 @@ public class ProductControllerTests
             Product = new ProductDto { Name = "New Product" }
         };
         var mockProduct = new ProductDto { Id = 1, Name = "New Product" };
-        _mockService.Setup(x => x.CreateProductAsync(request.Product)).ReturnsAsync(mockProduct);
+        _mockService.Setup(x => x.CreateProductAsync(request.Product)).ReturnsAsync(mockProduct.Id);
 
         // Act
         var response = await _productController.CreateProduct(request);
