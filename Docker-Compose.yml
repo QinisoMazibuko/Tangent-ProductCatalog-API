@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  catalogapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=DockerCompose
+    links:
+      - "redis:cache"
+    depends_on:
+      - "redis"
+    restart: on-failure
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
