@@ -15,12 +15,11 @@ public class ProductController : Controller
 {
 
     private readonly IProductService _productService;
-    private readonly ILogger<ProductController> _logger;
 
-    public ProductController(IProductService productService, ILogger<ProductController> logger)
+    public ProductController(IProductService productService)
     {
         _productService = productService ?? throw new ArgumentNullException(nameof(productService));
-        _logger = logger;
+
     }
 
     /// <summary>
