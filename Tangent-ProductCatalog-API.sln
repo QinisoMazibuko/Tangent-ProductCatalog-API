@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7FCA1C5-7149-48C2-95E3-1B7229B69F68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangent.Catalog.API", "src\Tangent.Catalog.API\Tangent.Catalog.API.csproj", "{5AAB4DC4-BAB5-4348-9601-AF33DC786A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.Services", "src\Tangent.Catalog.API.Services\Tangent.Catalog.API.Services.csproj", "{D8551C27-A969-45A8-8434-09C0F6D457C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.Domain", "src\Tangent.Catalog.API.Domain\Tangent.Catalog.API.Domain.csproj", "{76B1F659-F066-4EB8-9CCD-D937A6AD589D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.Repository", "src\Tangent.Catalog.API.Repository\Tangent.Catalog.API.Repository.csproj", "{A735D3D1-1026-4892-9562-CCB998E57C33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{67E5D64A-1B25-417E-972E-FFFBF85B37D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.Tests", "src\Tests\Tangent.Catalog.API.Tests\Tangent.Catalog.API.Tests.csproj", "{177C02BA-8B91-432A-BA65-A663E0B0A652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.ServiceTests", "src\Tests\Tangent.Catalog.API.ServiceTests\Tangent.Catalog.API.ServiceTests.csproj", "{9A87904E-7DD1-4DAF-8CED-05745D91D30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.RepositoryTests", "src\Tests\Tangent.Catalog.API.RepositoryTests\Tangent.Catalog.API.RepositoryTests.csproj", "{EBB8203B-8605-4230-92B0-BADB1610BED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangent.Catalog.API.DomainTests", "src\Tests\Tangent.Catalog.API.DomainTests\Tangent.Catalog.API.DomainTests.csproj", "{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AAB4DC4-BAB5-4348-9601-AF33DC786A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AAB4DC4-BAB5-4348-9601-AF33DC786A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AAB4DC4-BAB5-4348-9601-AF33DC786A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AAB4DC4-BAB5-4348-9601-AF33DC786A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8551C27-A969-45A8-8434-09C0F6D457C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8551C27-A969-45A8-8434-09C0F6D457C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8551C27-A969-45A8-8434-09C0F6D457C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8551C27-A969-45A8-8434-09C0F6D457C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B1F659-F066-4EB8-9CCD-D937A6AD589D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B1F659-F066-4EB8-9CCD-D937A6AD589D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B1F659-F066-4EB8-9CCD-D937A6AD589D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B1F659-F066-4EB8-9CCD-D937A6AD589D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A735D3D1-1026-4892-9562-CCB998E57C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A735D3D1-1026-4892-9562-CCB998E57C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A735D3D1-1026-4892-9562-CCB998E57C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A735D3D1-1026-4892-9562-CCB998E57C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177C02BA-8B91-432A-BA65-A663E0B0A652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177C02BA-8B91-432A-BA65-A663E0B0A652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177C02BA-8B91-432A-BA65-A663E0B0A652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177C02BA-8B91-432A-BA65-A663E0B0A652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A87904E-7DD1-4DAF-8CED-05745D91D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A87904E-7DD1-4DAF-8CED-05745D91D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A87904E-7DD1-4DAF-8CED-05745D91D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A87904E-7DD1-4DAF-8CED-05745D91D30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB8203B-8605-4230-92B0-BADB1610BED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB8203B-8605-4230-92B0-BADB1610BED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB8203B-8605-4230-92B0-BADB1610BED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB8203B-8605-4230-92B0-BADB1610BED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5AAB4DC4-BAB5-4348-9601-AF33DC786A72} = {F7FCA1C5-7149-48C2-95E3-1B7229B69F68}
+		{D8551C27-A969-45A8-8434-09C0F6D457C7} = {F7FCA1C5-7149-48C2-95E3-1B7229B69F68}
+		{76B1F659-F066-4EB8-9CCD-D937A6AD589D} = {F7FCA1C5-7149-48C2-95E3-1B7229B69F68}
+		{A735D3D1-1026-4892-9562-CCB998E57C33} = {F7FCA1C5-7149-48C2-95E3-1B7229B69F68}
+		{67E5D64A-1B25-417E-972E-FFFBF85B37D7} = {F7FCA1C5-7149-48C2-95E3-1B7229B69F68}
+		{177C02BA-8B91-432A-BA65-A663E0B0A652} = {67E5D64A-1B25-417E-972E-FFFBF85B37D7}
+		{9A87904E-7DD1-4DAF-8CED-05745D91D30C} = {67E5D64A-1B25-417E-972E-FFFBF85B37D7}
+		{EBB8203B-8605-4230-92B0-BADB1610BED3} = {67E5D64A-1B25-417E-972E-FFFBF85B37D7}
+		{AD91DDCB-F44D-47DF-B591-7C08AB29B8B2} = {67E5D64A-1B25-417E-972E-FFFBF85B37D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BCC3D96-52D8-4024-9695-764E60495968}
+	EndGlobalSection
+EndGlobal
